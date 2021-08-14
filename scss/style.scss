@@ -146,6 +146,26 @@ body {
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         border-radius: 22px;
     }
+
+    &__find-hotel {
+        color: white;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        width: 320px;
+        height: 44px;
+        border-radius: 22px;
+        border: none;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-family: "Material Icons";
+            font-size: 24px;
+        }
+    }
 }
 
 .main {
@@ -182,7 +202,10 @@ body {
         height: 305px;
         width: 320px;
         margin: 0 auto;
-        margin-top: 40px
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     &__title {
@@ -191,5 +214,64 @@ body {
         font-size: 24px;
         line-height: 29px;
     }
+
+    &__dropdown {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__button {
+    }
 }
 
+
+
+.dropdown {
+
+    &__arrival {
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 12px;
+        color: #1F2041;
+    }
+
+    &__menu {
+        width: 100%;
+        height: 44px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 13px 15px;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(31, 32, 65, 0.75);
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu::after {
+        
+        font-family: "Material Icons";
+        content: "expand_more";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: rgba(31, 32, 65, 0.5);
+    }
+
+    &__departure {
+        width: 150px;
+    }
+
+    &__guests {
+        margin-top: 20px;
+        width: 320px;
+    }
+}
