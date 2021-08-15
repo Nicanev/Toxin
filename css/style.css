@@ -76,7 +76,7 @@ body {
 }
 
 .menu__body {
-  height: 70px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,6 +216,15 @@ body {
   background-position: center center;
 }
 
+.main__title {
+  position: absolute;
+  width: 297px;
+  height: 48px;
+  text-align: right;
+  bottom: 18px;
+  right: 134px;
+}
+
 .find-hotel__block {
   position: absolute;
   top: 40px;
@@ -314,4 +323,127 @@ body {
 .dropdown__guests {
   margin-top: 20px;
   width: 320px;
+}
+
+.footer {
+  height: 443px;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+          box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__brand {
+  height: 132px;
+}
+
+.footer__logo {
+  margin-top: 100px;
+}
+
+.footer__title {
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 260px;
+}
+
+.nav {
+  width: 860px;
+  margin-top: 100px;
+}
+
+.nav_subscribe {
+  margin-top: 18px;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.nav__list {
+  list-style: none;
+}
+
+.nav__list li {
+  margin-bottom: 20px;
+}
+
+.nav__list li:first-child {
+  margin-bottom: 21px;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.title {
+  color: #1F2041;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  margin-left: 51px;
+}
+
+.subscribe__title {
+  margin-bottom: 21px;
+}
+
+.subscribe__subtitle {
+  width: 260px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 20px;
+}
+
+.subscribe__field {
+  position: relative;
+}
+
+.subscribe__field input {
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+.subscribe__field span {
+  font-family: Material Icons;
+  font-weight: normal;
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  color: #8BA4F9;
+  top: 9px;
 }
