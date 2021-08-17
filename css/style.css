@@ -285,16 +285,8 @@ body {
 }
 
 .dropdown__menu {
-  width: 100%;
   height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  padding: 13px 15px;
-  font-weight: normal;
-  font-size: 14px;
-  color: rgba(31, 32, 65, 0.75);
+  position: relative;
   margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,13 +299,24 @@ body {
           align-items: center;
 }
 
-.dropdown__menu::after {
+.dropdown__menu input {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  padding: 13px 15px;
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: normal;
+  font-size: 14px;
+  width: 100%;
+}
+
+.dropdown__menu span {
   font-family: "Material Icons";
-  content: "expand_more";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   color: rgba(31, 32, 65, 0.5);
+  position: absolute;
+  right: 3px;
 }
 
 .dropdown__departure {
