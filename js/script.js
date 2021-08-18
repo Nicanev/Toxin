@@ -8,6 +8,21 @@ function showDatePicker() {
     console.log('yes')
   }
 }
+
+function clearDataPicker() {
+  $('#end-date').val('');
+  $('.end-date-visible').text('ДД.ММ.ГГГГ');
+  $('#start-date').val('');
+  $('.start-date-visible').text('ДД.ММ.ГГГГ');
+  $("#datepicker").datepicker('option', null);
+}
+
+function confirmDatePicker() {
+  const datePicker =  document.querySelector(".datepicker__block");
+  datePicker.style.display = 'none';
+}
+
+	
 	
     $("#datepicker").datepicker({
       numberOfMonths: 1,

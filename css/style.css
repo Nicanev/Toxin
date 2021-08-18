@@ -611,6 +611,20 @@ td a {
   color: rgba(31, 32, 65, 0.75);
 }
 
+.end-date-visible::after {
+  content: 'expand_more';
+  font-family: Material Icons;
+  font-size: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.start-date-visible::after {
+  content: 'expand_more';
+  font-family: Material Icons;
+  font-size: 24px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,7 +696,7 @@ td a {
   z-index: 100;
   top: 186px;
   width: 320px;
-  height: 369px;
+  min-height: 369px;
   background-color: white;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -725,6 +739,7 @@ td a {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 10px;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
