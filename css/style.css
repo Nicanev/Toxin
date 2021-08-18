@@ -208,7 +208,6 @@ body {
 
 .main__background {
   position: relative;
-  z-index: -1;
   width: 100%;
   height: 830px;
   background-image: url("../img/background/background.jpg");
@@ -226,6 +225,7 @@ body {
 }
 
 .find-hotel__block {
+  z-index: 10;
   position: absolute;
   top: 40px;
   width: 380px;
@@ -278,6 +278,10 @@ body {
   margin-right: 20px;
 }
 
+.dropdown__arrival input {
+  position: absolute;
+}
+
 .dropdown__title {
   font-weight: bold;
   font-size: 12px;
@@ -321,6 +325,10 @@ body {
 
 .dropdown__departure {
   width: 150px;
+}
+
+.dropdown__departure input {
+  position: absolute;
 }
 
 .dropdown__guests {
@@ -517,4 +525,222 @@ body {
 
 .copyright__social img {
   margin-right: 20px;
+}
+
+td.ui-state-selected-range a {
+  background: none !important;
+  border: none !important;
+}
+
+td {
+  width: 40px;
+  height: 40px;
+}
+
+td a {
+  text-align: center !important;
+}
+
+.ui-red-start {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.25)), to(rgba(139, 164, 249, 0.25))) !important;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%) !important;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.ui-red-end {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.25)), to(rgba(139, 164, 249, 0.25))) !important;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%) !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.ui-red-start .ui-state-default,
+.ui-red-end .ui-state-default {
+  border: none !important;
+  background: none !important;
+  font-weight: normal;
+  color: white !important;
+}
+
+.ui-state-selected-range {
+  border: none !important;
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: normal;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.25)), to(rgba(139, 164, 249, 0.25)));
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
+}
+
+.start-date-visible {
+  width: 150px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  font-weight: normal;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.end-date-visible {
+  width: 150px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  font-weight: normal;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background: none;
+}
+
+.ui-widget-header {
+  background: none;
+  border: none;
+}
+
+.ui-state-highlight, .ui-state-highlight, .ui-state-highlight {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA)) !important;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%) !important;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 22px;
+  color: white !important;
+}
+
+.ui-datepicker th {
+  color: #BC9CFF;
+}
+
+.ui-red-start .ui-state-default, .ui-red-end .ui-state-default {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9)) !important;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
+  border-radius: 22px;
+  height: 40px;
+  width: 40px;
+}
+
+.ui-red-start .ui-state-default, .ui-red-end .ui-state-default {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9)) !important;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%) !important;
+  border-radius: 22px;
+  height: 40px;
+  width: 40px;
+}
+
+.ui-datepicker-prev .ui-icon {
+  background-image: url("../img/icon/arrow_back.svg") !important;
+}
+
+.ui-icon-circle-triangle-e {
+  background-position: 0 0;
+}
+
+.ui-datepicker-next .ui-icon {
+  background-image: url("../img/icon/arrow_forward.svg") !important;
+}
+
+.ui-icon-circle-triangle-w {
+  background-position: 0 0;
+}
+
+.datepicker__block {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 186px;
+  width: 320px;
+  height: 369px;
+  background-color: white;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-datepicker {
+  padding: 0;
+  padding-top: 20px;
+  width: 270px;
+  margin: 0 auto;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  margin-bottom: 20px;
+  color: #1F2041 !important;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.datepicker__button {
+  text-transform: uppercase;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  cursor: pointer;
+}
+
+.datepicker__buttons {
+  width: 270px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ui-datepicker table {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.ui-datepicker-calendar {
+  height: 240px;
 }
