@@ -59,8 +59,15 @@
                   <div class="dropdown__arrival">
                     <div class="dropdown__title">ПРИБЫТИЕ</div>
                     <div class="dropdown__menu">
-                      <input type="text" id="start-date" style="visibility: hidden" />
-                      <div class="start-date-visible" onclick="showDatePicker()">
+                      <input
+                        type="text"
+                        id="start-date"
+                        style="visibility: hidden"
+                      />
+                      <div
+                        class="start-date-visible"
+                        onclick="showDatePicker()"
+                      >
                         ДД.ММ.ГГГГ
                       </div>
                     </div>
@@ -68,14 +75,28 @@
                   <div class="datepicker__block">
                     <div id="datepicker" class="datepicker"></div>
                     <div class="datepicker__buttons">
-                      <button class="datepicker__button" onclick="clearDataPicker()">Очистить</button>
-                      <button class="datepicker__button" onclick="confirmDatePicker()">Применить</button>
+                      <button
+                        class="datepicker__button"
+                        onclick="clearDataPicker()"
+                      >
+                        Очистить
+                      </button>
+                      <button
+                        class="datepicker__button"
+                        onclick="confirmDatePicker()"
+                      >
+                        Применить
+                      </button>
                     </div>
                   </div>
                   <div class="dropdown__departure">
                     <div class="dropdown__title">ОТЪЕЗД</div>
                     <div class="dropdown__menu">
-                      <input type="text" id="end-date" style="visibility: hidden" />
+                      <input
+                        type="text"
+                        id="end-date"
+                        style="visibility: hidden"
+                      />
                       <div class="end-date-visible" onclick="showDatePicker()">
                         ДД.ММ.ГГГГ
                       </div>
@@ -83,7 +104,34 @@
                   </div>
                   <div class="dropdown__guests">
                     <div class="dropdown__title">ГОСТИ</div>
-                    <div class="dropdown__menu"><input type="text" placeholder='Сколько гостей'> <span>expand_more</span></div>
+                    <div class="dropdown__menu">
+                      <input type="text" placeholder="Сколько гостей" />
+                      <span>expand_more</span>
+                    </div>
+                    <div class="guests__block">
+                      <div class="guests__main">
+                        <div class="guests__ageGroups">
+                          <div class="guests__ageGroup">ВЗРОСЛЫЕ</div>
+                          <div class="guests__ageGroup">ДЕТИ</div>
+                          <div class="guests__ageGroup">МЛАДЕНЦЫ</div>
+                        </div>
+                        <div class="guests__counters">
+                          <div class="guests__counter">
+                              0
+                          </div>
+                          <div class="guests__counter">
+                            0
+                          </div>
+                          <div class="guests__counter">
+                            0
+                          </div>
+                        </div>
+                        <div class="guests__buttons">
+                          <div class="guests__button">Очистить</div>
+                          <div class="guests__button">Применить</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="find-hotel__button">
@@ -156,9 +204,9 @@
             Copyright © 2018 Toxin отель. Все права защищены.
           </div>
           <div class="copyright__social">
-            <img src="img/icon/twitter.svg" alt="">
-            <img src="img/icon/fb.svg" alt="">
-            <img src="img/icon/instagram.svg" alt="">
+            <img src="img/icon/twitter.svg" alt="" />
+            <img src="img/icon/fb.svg" alt="" />
+            <img src="img/icon/instagram.svg" alt="" />
           </div>
         </div>
       </div>

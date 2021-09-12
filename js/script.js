@@ -2,10 +2,8 @@ function showDatePicker() {
   const datePicker =  document.querySelector(".datepicker__block");
   if (datePicker.style.display == 'none') {
     datePicker.style.display = 'block';
-    console.log('1')
   } else {
     datePicker.style.display = 'none';
-    console.log('yes')
   }
 }
 
@@ -75,3 +73,7 @@ function confirmDatePicker() {
         }
       }
     });
+
+function showGuestMenu() {
+  
+}

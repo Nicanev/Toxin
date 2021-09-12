@@ -263,6 +263,8 @@ body {
             font-weight: normal;
             font-size: 14px;
             width: 100%;
+            outline: 0;
+            outline-offset: 0;
         }
         span {
             font-family: "Material Icons";
@@ -290,6 +292,10 @@ body {
     &__guests {
         margin-top: 20px;
         width: 320px;
+        position: relative;
+    }
+    &__guests input:focus {
+        border: 1px solid rgba(31, 32, 65, 0.5)
     }
 }
 
@@ -681,4 +687,124 @@ line-height: 15px;
 .ui-datepicker-calendar {
   height: 240px;
 }
+
+.guests {
+
+    &__block {
+        height: 159px;
+        width: 320px;
+        position: absolute;
+        background-color: white;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        border-radius: 0px 0px 4px 4px;
+        top: 60px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__main {
+        width: 300px;
+        height: 139px;
+        margin-top: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__ageGroups {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #1F2041;
+        margin-top: 7px;
+    }
+
+    &__ageGroup {
+        margin-bottom:22px;
+    }
+
+    &__counters {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        
+        color: #1F2041;
+    }
+
+
+
+    &__counter {
+        margin-bottom:19px;
+        margin-bottom: 22px;
+        right: 40px;
+        position: relative;
+    }
+    &__counter::after {
+        content: '+';
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 18px;
+        line-height: 22px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        padding: 2px 9px;
+        position: absolute;
+        top: -6px;
+        margin-left: 13px;
+    }
+
+    &__counter::after {
+        content: '+';
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 18px;
+        line-height: 22px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        padding: 2px 9px;
+        position: absolute;
+        top: -6px;
+        margin-left: 13px;
+        cursor: pointer;
+    }
+    &__counter::before{
+        content: '-';
+        color: rgba(31, 32, 65, 0.5);
+        font-size: 18px;
+        line-height: 22px;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 50%;
+        padding: 2px 9px;
+        position: absolute;
+        top: -6px;
+        right: 18px;
+        cursor: pointer;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        position: absolute;
+        top: 125px;
+    }
+
+    &__button {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #BC9CFF;
+        cursor: pointer;
+    }
+}
+
+.counter {
+
+    &__minus {
+    }
+}
+
 
